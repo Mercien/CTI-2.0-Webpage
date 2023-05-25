@@ -4,14 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="128x128" href="Images/cit-logo-png-1.png">
+  <link rel="icon" type="image/png" sizes="128x128" href="Assets/Images/logo/CTI-LOGO-removebg-preview.png">
+
+  <!-- STYLE SHEET -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- JQUERY LINK -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- FONT STYLE  -->
+<script src="https://kit.fontawesome.com/c190620e84.js" crossorigin="anonymous"></script>
 
   <title>CTI 2.O</title>
 </head>
 <body>
-    
+<!-- NAVIGATION  -->
+  <nav>
+    <img src="Assets/Images/logo/corected-logo.png" alt="">
+    <div class="navigation">
+      <ul>
+        <i id="menu-close" class="fa-solid fa-xmark"></i>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <img id="menu-button" src="Assets/Images/icons/menu.png" alt="menu">
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home">
+    <h1>Acquire a Tech In-demand Skill</h1>
+          <p>Acquire invaluable technological proficiencies through our diverse array of courses and secure your desired career opportunity.</p>
+          <div class="button-container">
+            <a class="blue" href="#">Learn More</a>
+            <a class="orange" href="#">Apply</a>
+  </section>
+
+  <script>
+    $('#menu-button').click(function(){
+      $('nav .navigation ul').addClass('active')
+    })
+    $('#menu-close').click(function(){
+      $('nav .navigation ul').removeClass('active')
+    })
+
+  </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div id="backdrop">
+    <section id="header">
+        <a href="#" class="logo-container">
+          <img class="logo" src="folder/CTI-LOGO-removebg-preview.png" alt="logo">
+          <span>CITADELLE TECH</span>
+        </a>
+        <div class="navbar-container">
+            <ul id="navbar"> 
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div id="mobile"> 
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </section>
+
+    HERO SECTION
+    <section id="hero">
+      <div class="overlay"></div>
+        <div class="text">
+          <h1>Acquire a Tech In-demand Skill</h1>
+          <p>Acquire invaluable technological proficiencies through our diverse array of courses and secure your desired career opportunity.</p>
+          <div class="button-container">
+            <button>Learn More</button>
+            <button>Apply</button>
+          </div>
+        </div>
+    </section>
+</div>

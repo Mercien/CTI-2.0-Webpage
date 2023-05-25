@@ -1,0 +1,9 @@
+COLOR:
+Blue - #000421
+orange - #f7941d
+
+FONT
+menu - Montserrat (weight = 400 or 500)
+large topic - Montserrat (weight = 700 or 800)
+sub note - Montserrat (weight = 600)
+Button text - Montserrat (weight = 700 )
