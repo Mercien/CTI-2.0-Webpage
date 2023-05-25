@@ -416,6 +416,11 @@ nav .navigation ul li a:hover {
     color: var(--white);
   }
 
+  #navbar li a.underline::after,
+#navbar li a:hover::after {
+  display: none;
+}
+
 
 
   #home p {
