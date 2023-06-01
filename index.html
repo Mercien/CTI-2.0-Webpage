@@ -171,13 +171,13 @@
   <!-- OUR SPONSORS -->
   <section id="sponsors">
     <h2>Our Sponsors</h2>
-    <div class="sponsors-logo">
-      <img src="Assets/Images/logo/logo.jpeg" alt="">
-      <img src="Assets/Images/logo/logo.jpeg" alt="">
-      <img src="Assets/Images/logo/logo.jpeg" alt="">
-      <img src="Assets/Images/logo/logo.jpeg" alt="">
-      <img src="Assets/Images/logo/logo.jpeg" alt="">
-      <img src="Assets/Images/logo/logo.jpeg" alt="">
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="Assets/Images/logo/logo.jpeg" alt="">
+        <img src="Assets/Images/logo/logo.jpeg" alt="">
+        <img src="Assets/Images/logo/logo.jpeg" alt="">
+        <img src="Assets/Images/logo/logo.jpeg" alt="">
+        <img src="Assets/Images/logo/logo.jpeg" alt="">
     </div>
   </section>
   <script>
@@ -187,66 +187,10 @@
     $('#menu-close').click(function () {
       $('nav .navigation ul').removeClass('active')
     })
+
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector('.logos').appendChild(copy);
   </script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div id="backdrop">
-    <section id="header">
-        <a href="#" class="logo-container">
-          <img class="logo" src="folder/CTI-LOGO-removebg-preview.png" alt="logo">
-          <span>CITADELLE TECH</span>
-        </a>
-        <div class="navbar-container">
-            <ul id="navbar"> 
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-        <div id="mobile"> 
-            <i id="bar" class="fa-solid fa-outdent"></i>
-        </div>
-    </section>
-
-    HERO SECTION
-    <section id="hero">
-      <div class="overlay"></div>
-        <div class="text">
-          <h1>Acquire a Tech In-demand Skill</h1>
-          <p>Acquire invaluable technological proficiencies through our diverse array of courses and secure your desired career opportunity.</p>
-          <div class="button-container">
-            <button>Learn More</button>
-            <button>Apply</button>
-          </div>
-        </div>
-    </section>
-</div>

@@ -333,7 +333,7 @@ margin-top: 50px;
 }
 
 .icon-font{
-  font-size: 2.0px;
+  font-size: 20px;
   color: #f7941d;
 }
 
@@ -348,30 +348,66 @@ margin-top: 50px;
 
 /* OUR SPONSERS */
 #sponsors {
-    padding: 40px 80px;
+    padding: 40px 0px;
     text-align: center
 }
 
 #sponsors h2 {
   color: var(--Orange);
     font-weight: 800;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
-.sponsors-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-.sponsors-logo img {
-  width: 150px;
-  height: 150px;
+.logos {
+  overflow: hidden;
+  padding: 60px 0 ;
+  background-color: var(--white);
+  white-space: nowrap;
+  position: relative;
 }
 
+.logos::before,
+.logos::after {
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(to left,  rgba(255, 255, 255, 0), var(--white));
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--white));
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 80px;
+  margin: 0 40px;
+}
 
 
 
@@ -449,13 +485,22 @@ margin-top: 50px;
 
 /* ABOUT US SECTION */
 #section-3 {
-  /* height: 100vh; */
+  height: 90vh;
   padding: 40px 0px;
 }
 
 .bottom-position {
   bottom: -60px;
 }
+
+
+/* SPONSORS SECTION */
+.sponsors-logo img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
 }
 
 
