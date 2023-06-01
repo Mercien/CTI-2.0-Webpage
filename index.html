@@ -173,11 +173,11 @@
     <h2>Our Sponsors</h2>
     <div class="logos">
       <div class="logos-slide">
-        <img src="Assets/Images/logo/logo.jpeg" alt="">
-        <img src="Assets/Images/logo/logo.jpeg" alt="">
-        <img src="Assets/Images/logo/logo.jpeg" alt="">
-        <img src="Assets/Images/logo/logo.jpeg" alt="">
-        <img src="Assets/Images/logo/logo.jpeg" alt="">
+        <img src="Assets/Images/logo/logo-2.jpeg" alt="">
+        <img src="Assets/Images/logo/logo-2.jpeg" alt="">
+        <img src="Assets/Images/logo/logo-2.jpeg" alt="">
+        <img src="Assets/Images/logo/logo-2.jpeg" alt="">
+        <img src="Assets/Images/logo/logo-2.jpeg" alt="">
     </div>
   </section>
   <script>
@@ -188,8 +188,19 @@
       $('nav .navigation ul').removeClass('active')
     })
 
-    var copy = document.querySelector(".logos-slide").cloneNode(true);
-    document.querySelector('.logos').appendChild(copy);
+    // REPEATING LOGOS SLIDES SECTON
+    var numberOfCopies = 2; // Number of copies you want to create
+
+var originalDiv = document.querySelector(".logos-slide");
+var containerDiv = document.querySelector('.logos');
+
+for (var i = 0; i < numberOfCopies; i++) {
+  var copy = originalDiv.cloneNode(true);
+  containerDiv.appendChild(copy);
+}
+
+// var copy = document.querySelector(".logos-slide").cloneNode(true);
+//     document.querySelector('.logos').appendChild(copy);
   </script>
 </body>
 
