@@ -446,8 +446,8 @@ margin-top: 50px;
     width: 200px;
     background-color: var(--white);
     height: 100vh;
-    /* background: rgba(17, 20, 104, 0.45); */
-    background: rgba(0, 4, 33, 0.75);
+    background: rgba(17, 20, 104, 0.45);
+    background: ;
     backdrop-filter: blur(4.5px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     display: flex;
@@ -500,11 +500,6 @@ margin-top: 50px;
   width: 80px;
   height: 80px;
   margin-right: 20px;
-}
-
-.logos-slide img {
-  height: 80px;
-  margin: 0 20px;
 }
 
 }
