@@ -363,6 +363,15 @@ margin-top: 50px;
   background: #efefef;
 }
 
+#course-slider-section h2{
+  font-family: 'Montserrat', sans-serif;
+  color: #000421;
+  text-align: center;
+  font-weight: 800;
+  /* font-size: 31px; */
+  margin: 50px 0px 30px 0px;
+}
+
 .containers {
   max-width: 1400px;
   width: 100%;
@@ -449,7 +458,7 @@ a{
 }
 
 #sponsors h2 {
-  color: var(--Orange);
+  color: var(--Blue);
     font-weight: 800;
     margin-bottom: 30px;
 }
@@ -522,7 +531,7 @@ a{
 
   nav{
     padding: 15px 20px;
-    z-index: 999;
+    /* z-index: 999; */
   }
 
   #menu-button {
