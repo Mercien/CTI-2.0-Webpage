@@ -71,7 +71,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15); */
   padding: 0.9vw 8vw;
   position: fixed;
 
@@ -304,6 +304,7 @@ nav .navigation ul li a:hover {
 .content {
   width: 60%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .list {
@@ -316,14 +317,20 @@ nav .navigation ul li a:hover {
 
 .list li {
   /* margin-bottom: 10px; */
-  text-align: left;
+  text-align: center;
 }
 
 .list li::marker {
   color: #f7941d;
   font-size: 30px;
 }
-
+.list li{
+  list-style-type:circle;
+  position: relative;
+}
+.list li{
+  text-overflow:clip;
+}
 .center {
 margin-top: 50px;
 }
@@ -343,6 +350,7 @@ margin-top: 50px;
   height: 7px;
   border-radius: 50%;
   margin: 0px 20px 0 0;
+  
 }
 
 
