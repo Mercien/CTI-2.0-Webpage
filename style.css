@@ -517,12 +517,11 @@ a{
 .main> .submain{
   text-align: left !important;
   background: linear-gradient(to top, #000108, #000317, #010736);
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: left;
   align-items: center;
-  padding: 50px 0px;
+  padding: 50px 40px;
 }
 
 .main> .submain> h1{
@@ -543,6 +542,7 @@ a{
 .main> .submain> .contactUs >.contact>p>a{
  text-decoration: none;
  color: #000421;
+ transition: 0.3s ease;
 }
 
 .main> .submain> .contactUs >.contact>p>a:hover{
@@ -587,14 +587,17 @@ i:hover {
   background-color: rgba(0, 4, 33, 0.9);
   padding: 40px 70px 70px 70px;
   text-align: center;
+  margin: 50px;
 }
 
-.main> .submain2>.form>a{
+.main> .submain2>.form>.support-links>a{
   color: white;
   text-decoration: none;
+  margin-bottom: 10px;
+  transition: 0.3s ease;
 }
 
-.main> .submain2>.form>a:hover{
+.main> .submain2>.form>.support-links>a:hover{
   color: #f7941d;
 }
 
