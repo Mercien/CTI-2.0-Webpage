@@ -590,7 +590,12 @@ i:hover {
   margin: 50px;
 }
 
-.main> .submain2>.form>.support-links>a{
+.support-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.main> .submain2>.form> .support-links>a{
   color: white;
   text-decoration: none;
   margin-bottom: 10px;
