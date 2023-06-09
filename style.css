@@ -579,7 +579,7 @@ i:hover {
 }
 
 .main> .submain2 >.form> h1{
-  color: white;
+  color: var(--Orange);
   margin-bottom: 20px;
 }
 
