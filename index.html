@@ -26,6 +26,8 @@
   <!-- css file -->
   <link rel="stylesheet" href="style.css">
 
+  
+
     <!-- FONT STYLE  -->
     <script src="https://kit.fontawesome.com/c190620e84.js" crossorigin="anonymous"></script>
 
@@ -247,6 +249,70 @@
 
   </section>
 
+<!-- COUNTDOWN -->
+  <section id="countdown">
+    <h2>Countdown</h2>
+    <div class="countdown-container container">
+      <div class="clock row">
+      
+      <!-- days --> 
+      <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+      <div class="wrap">
+      <div class="inner">
+      <div id="canvas_days" class="clock-canvas"></div>
+      <div class="text">
+      <p class="val">0</p>
+      <p class="type-days type-time">DAYS</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+      <!-- hours --> 
+      
+      <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+      <div class="wrap">
+      <div class="inner">
+      <div id="canvas_hours" class="clock-canvas"></div>
+      <div class="text">
+      <p class="val">0</p>
+      <p class="type-hours type-time">HOURS</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+      <!-- minutes --> 
+      <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+      <div class="wrap">
+      <div class="inner">
+      <div id="canvas_minutes" class="clock-canvas"></div>
+      <div class="text">
+      <p class="val">0</p>
+      <p class="type-minutes type-time">MINUTES</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+      <!-- seconds --> 
+      <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+      <div class="wrap">
+      <div class="inner">
+      <div id="canvas_seconds" class="clock-canvas"></div>
+      <div class="text">
+      <p class="val">0</p>
+      <p class="type-seconds type-time">SECONDS</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      
+      </div>
+
+  </section>
+
   <!-- OUR SPONSORS -->
   <section id="sponsors">
     <h2>Our Sponsors</h2>
@@ -259,6 +325,8 @@
 
     </div>
   </section>
+
+
 
   <!-- FOOTER SECTION -->
   <section id="footer">
@@ -330,6 +398,20 @@ for (var i = 0; i < numberOfCopies; i++) {
   </script>
       <script src="Assets/Script/swiper-bundle.min.js"></script>
       <script src="Assets/Script/script.js"></script>
+
+<!-- countdown -->
+      <script>
+        $('.countdown').final_countdown({
+          start: '1675382400',
+          end: '1678329599',
+          now: '1675382400',
+        });
+        
+        </script>
+  <script type="text/javascript" src="/countdown/countdown.js"></script>
+  <script type="text/javascript" src="/countdown/asset/js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="/countdown/asset/js/Final-Countdown_js_kinetic.js"></script>
+  <script type="text/javascript" src="/countdown/asset/js/Final-Countdown_jquery.final-countdown.js"></script>
 </body>
 
 </html>
