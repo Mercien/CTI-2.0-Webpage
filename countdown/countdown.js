@@ -1,9 +1,9 @@
 
 $(document).ready(function() {
 $('.countdown').final_countdown({
-start: '1675382400',
-end: '1678329599',
-now: '1675382400',
+start: '1675401600',
+end: '1687727999',
+now: '1675401600',
 selectors: {
     value_seconds: '.clock-seconds .val',
     canvas_seconds: 'canvas_seconds',

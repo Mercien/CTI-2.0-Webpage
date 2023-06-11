@@ -452,7 +452,7 @@ a{
 /* COUNTDOWN */
 #countdown{
   /* background-image: url(/countdown/asset/img/pattern.png); */
-  background-color: #030620a6;
+  background-color: #010736;
   background-repeat: repeat;
   background-position: center;
   font-family: 'Montserrat';
@@ -650,7 +650,7 @@ i:hover {
 }
 
 .main> .submain2>.form{
-  background-color: rgba(0, 4, 33, 0.9);
+  background-color: #000421e6;
   padding: 40px 70px 70px 70px;
   text-align: center;
   margin: 50px;
